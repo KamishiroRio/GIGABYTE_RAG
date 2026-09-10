@@ -1,0 +1,7 @@
+models/
+.venv/
+.venv-wsl/
+src/
+__pycache__/
+*.gguf
+cache/
