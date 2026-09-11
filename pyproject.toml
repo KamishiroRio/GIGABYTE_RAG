@@ -1,7 +1,7 @@
 [project]
 name = "gigabyte-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "QA AI assistant system that answers spec. about AORUS MASTER 16 AM6H"
 readme = "README.md"
 authors = [
     { name = "borissu", email = "b11902166@csie.ntu.edu.tw" }
@@ -12,11 +12,27 @@ dependencies = [
     "numpy>=2.5.3",
     "requests>=2.34.2",
     "sentence-transformers>=6.0.1",
+    "huggingface-hub",
+    "llama-cpp-python",
+    "google-genai",
+    "nvidia-cuda-runtime-cu12",
+    "nvidia-cublas-cu12",
+    "nvidia-cusparse-cu12",
 ]
 
-[project.scripts]
-gigabyte-rag = "gigabyte_rag:main"
+# ==========================================
+# 告訴 uv 這只是一個應用程式專案，不要嘗試打包它
+# ==========================================
+[tool.uv]
+package = false
 
-[build-system]
-requires = ["uv_build>=0.12.12,<0.13.0"]
-build-backend = "uv_build"
+# ==========================================
+# 告訴 uv 去哪裡下載 CUDA 版本的 llama-cpp-python
+# ==========================================
+[[tool.uv.index]]
+name = "llama-cpp-python-cu124"
+url = "https://abetlen.github.io/llama-cpp-python/whl/cu124"
+explicit = true 
+
+[tool.uv.sources]
+llama-cpp-python = { index = "llama-cpp-python-cu124" }

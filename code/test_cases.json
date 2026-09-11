@@ -1,602 +1,702 @@
 [
-{
-"id": 1,
-"query": "請問 AORUS MASTER 16 BZH 的處理器型號、核心數與執行緒數是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 2,
-"query": "AORUS MASTER 16 BYH 使用哪一款 NVIDIA 顯示晶片？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 3,
-"query": "BXH 型號的顯示卡記憶體容量是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 4,
-"query": "請問 BZH 的 OLED 螢幕解析度是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 5,
-"query": "BYH 的螢幕更新率和反應時間分別是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 6,
-"query": "AORUS MASTER 16 BXH 的記憶體最高支援多少 GB？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 7,
-"query": "BZH 有幾個 SO-DIMM 記憶體插槽？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 8,
-"query": "請問 BYH 最多可以安裝多少容量的 SSD？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 9,
-"query": "BXH 支援哪些 M.2 PCIe 插槽規格？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 10,
-"query": "BZH 的鍵盤是否支援 N-Key？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 11,
-"query": "BYH 配備哪一種 Wi-Fi 標準？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 12,
-"query": "BXH 的 Bluetooth 版本是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 13,
-"query": "請問 BZH 是否有 Thunderbolt 5？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 14,
-"query": "AORUS MASTER 16 BYH 的電池容量是多少 Wh？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 15,
-"query": "BXH 隨附的變壓器功率是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 16,
-"query": "BZH 的重量大約是多少公斤？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 17,
-"query": "BYH 的機身尺寸是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 18,
-"query": "BXH 的預設機身顏色是什麼？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 19,
-"query": "AORUS MASTER 16 BZH 的攝影機解析度是多少？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 20,
-"query": "請問 BYH 是否支援 Windows Hello 臉部辨識？",
-"weight": 1.0,
-"type": "factual"
-},
-{
-"id": 21,
-"query": "BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 22,
-"query": "請比較三個型號的處理器規格。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 23,
-"query": "BZH 與 BYH 的顯示卡 AI Boost 頻率有什麼不同？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 24,
-"query": "BYH 和 BXH 的 GPU 效能規格有哪些差異？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 25,
-"query": "請比較 BZH、BYH、BXH 的螢幕規格，包括解析度、更新率和面板類型。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 26,
-"query": "三個 AORUS MASTER 16 型號的記憶體和 SSD 擴充規格是否相同？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 27,
-"query": "請比較 BZH 與 BXH 的顯示卡 VRAM 容量。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 28,
-"query": "BZH 和 BYH 的處理器是否相同？請說明差異。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 29,
-"query": "請列出三個型號在最大記憶體容量、記憶體頻率及插槽數量上的差異。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 30,
-"query": "比較 BZH、BYH 和 BXH 的儲存裝置插槽規格與最高 SSD 容量。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 31,
-"query": "三個型號的鍵盤規格是否有不同？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 32,
-"query": "請比較 BZH、BYH、BXH 的連接埠配置。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 33,
-"query": "BZH 與 BXH 的 Thunderbolt 5 和 Thunderbolt 4 支援情況是否一樣？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 34,
-"query": "請比較三個型號的 Wi-Fi、藍牙及有線網路規格。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 35,
-"query": "三個型號的電池容量與變壓器功率有何不同？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 36,
-"query": "請比較 BZH、BYH 和 BXH 的尺寸與重量。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 37,
-"query": "三個型號是否都配備相同的攝影機與 Windows Hello 功能？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 38,
-"query": "BZH、BYH、BXH 的顏色是否有差異？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 39,
-"query": "請比較三個型號的音效系統規格。",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 40,
-"query": "如果只看 Context 中的規格，BZH、BYH、BXH 哪些硬體規格完全相同？哪些不同？",
-"weight": 1.5,
-"type": "comparison"
-},
-{
-"id": 41,
-"query": "這台筆電的記憶體最高可以到多少？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 42,
-"query": "請問這系列筆電用什麼處理器？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 43,
-"query": "這台的顯示卡是哪一張？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 44,
-"query": "螢幕有多大、解析度和更新率是多少？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 45,
-"query": "這款筆電有幾個 M.2 SSD 插槽？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 46,
-"query": "請問記憶體可以擴充嗎？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 47,
-"query": "這系列的電池容量是多少？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 48,
-"query": "這台電腦的變壓器需要幾瓦？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 49,
-"query": "它有支援 Wi-Fi 7 嗎？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 50,
-"query": "這台有 Thunderbolt 嗎？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 51,
-"query": "這系列筆電的鍵盤是什麼類型？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 52,
-"query": "它的重量大約是多少？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 53,
-"query": "這款的尺寸是多少？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 54,
-"query": "這系列有沒有 IR Webcam？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 55,
-"query": "這台筆電的顏色是什麼？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 56,
-"query": "這三個型號的螢幕規格都一樣嗎？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 57,
-"query": "這系列最高可以搭載多大容量的 SSD？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 58,
-"query": "這台支援 Windows Hello 臉部登入嗎？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 59,
-"query": "請問這系列的網路連線功能有哪些？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 60,
-"query": "這台筆電有幾個 USB Type-C？",
-"weight": 1.5,
-"type": "ambiguous"
-},
-{
-"id": 61,
-"query": "BZH 購買時有沒有附贈滑鼠？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 62,
-"query": "BYH 可以選購白色或銀色版本嗎？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 63,
-"query": "BXH 的電池續航力可以使用幾個小時？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 64,
-"query": "這三個型號的保固期限各是幾年？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 65,
-"query": "BZH 的 CPU 在 Cinebench R23 多核心跑分是多少？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 66,
-"query": "BYH 玩 Cyberpunk 2077 在 2K 解析度下可以跑多少 FPS？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 67,
-"query": "BXH 的風扇噪音最高有幾分貝？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 68,
-"query": "BZH 是否支援觸控螢幕？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 69,
-"query": "BYH 的螢幕最大亮度在一般使用模式下是多少 nits？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 70,
-"query": "BXH 是否內建指紋辨識器？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 71,
-"query": "BZH 的 RAM 是由哪一家廠商生產的？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 72,
-"query": "BYH 可以自行更換 CPU 嗎？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 73,
-"query": "BXH 是否支援 RAID 0？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 74,
-"query": "BZH 的內建 SSD 讀寫速度是多少 MB/s？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 75,
-"query": "BYH 的鍵盤 RGB 可以自訂每一顆按鍵的顏色嗎？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 76,
-"query": "BXH 是否附贈 Windows Office 授權？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 77,
-"query": "BZH 的散熱系統使用幾根熱導管？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 78,
-"query": "BYH 是否支援 eSIM 行動網路？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 79,
-"query": "BXH 的價格在台灣是多少？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 80,
-"query": "這系列筆電的售後維修據點有哪些？",
-"weight": 2.0,
-"type": "hallucination_test"
-},
-{
-"id": 81,
-"query": "What is the GPU of BZH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 82,
-"query": "How much RAM does BYH support at maximum?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 83,
-"query": "What is the screen resolution and refresh rate of BXH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 84,
-"query": "Does BZH support Wi-Fi 7?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 85,
-"query": "How many M.2 SSD slots are available on BYH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 86,
-"query": "What processor is used in AORUS MASTER 16 BXH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 87,
-"query": "What is the maximum graphics power of the BZH GPU?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 88,
-"query": "How much VRAM does the BYH graphics card have?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 89,
-"query": "Does BXH have Thunderbolt 5 and Thunderbolt 4 ports?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 90,
-"query": "What type of keyboard does BZH use?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 91,
-"query": "What is the battery capacity of BYH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 92,
-"query": "What AC adapter wattage comes with BXH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 93,
-"query": "What are the dimensions and weight of BZH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 94,
-"query": "What color is the AORUS MASTER 16 BYH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 95,
-"query": "Does BZH support Windows Hello facial authentication?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 96,
-"query": "What connectivity options are available on BYH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 97,
-"query": "Are the display specifications identical across BZH, BYH, and BXH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 98,
-"query": "Compare the GPUs of BZH, BYH, and BXH.",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 99,
-"query": "Does the specification sheet mention the warranty period for BXH?",
-"weight": 2.0,
-"type": "multilingual"
-},
-{
-"id": 100,
-"query": "What is the maximum SSD storage capacity supported by the AORUS MASTER 16 series?",
-"weight": 2.0,
-"type": "multilingual"
-}
+  {
+    "id": 1,
+    "query": "請問 AORUS MASTER 16 BZH 的處理器型號、核心數與執行緒數是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Ultra 9", "275HX", "24", "24"]
+  },
+  {
+    "id": 2,
+    "query": "AORUS MASTER 16 BYH 使用哪一款 NVIDIA 顯示晶片？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["5080"]
+  },
+  {
+    "id": 3,
+    "query": "BXH 型號的顯示卡記憶體容量是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["12GB"]
+  },
+  {
+    "id": 4,
+    "query": "請問 BZH 的 OLED 螢幕解析度是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["2560", "1600"]
+  },
+  {
+    "id": 5,
+    "query": "BYH 的螢幕更新率和反應時間分別是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["240Hz", "1ms"]
+  },
+  {
+    "id": 6,
+    "query": "AORUS MASTER 16 BXH 的記憶體最高支援多少 GB？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["64"]
+  },
+  {
+    "id": 7,
+    "query": "BZH 有幾個 SO-DIMM 記憶體插槽？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["2"]
+  },
+  {
+    "id": 8,
+    "query": "請問 BYH 最多可以安裝多少容量的 SSD？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["4TB"]
+  },
+  {
+    "id": 9,
+    "query": "BXH 支援哪些 M.2 PCIe 插槽規格？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Gen5", "Gen4"]
+  },
+  {
+    "id": 10,
+    "query": "BZH 的鍵盤是否支援 N-Key？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["N-Key"]
+  },
+  {
+    "id": 11,
+    "query": "BYH 配備哪一種 Wi-Fi 標準？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Wi-Fi 7", "802.11be"]
+  },
+  {
+    "id": 12,
+    "query": "BXH 的 Bluetooth 版本是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["5.4"]
+  },
+  {
+    "id": 13,
+    "query": "請問 BZH 是否有 Thunderbolt 5？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Thunderbolt 5"]
+  },
+  {
+    "id": 14,
+    "query": "AORUS MASTER 16 BYH 的電池容量是多少 Wh？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["99Wh"]
+  },
+  {
+    "id": 15,
+    "query": "BXH 隨附的變壓器功率是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["330W"]
+  },
+  {
+    "id": 16,
+    "query": "BZH 的重量大約是多少公斤？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["2.5"]
+  },
+  {
+    "id": 17,
+    "query": "BYH 的機身尺寸是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["357", "254"]
+  },
+  {
+    "id": 18,
+    "query": "BXH 的預設機身顏色是什麼？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Dark Tide"]
+  },
+  {
+    "id": 19,
+    "query": "AORUS MASTER 16 BZH 的攝影機解析度是多少？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["1080p", "FHD"]
+  },
+  {
+    "id": 20,
+    "query": "請問 BYH 是否支援 Windows Hello 臉部辨識？",
+    "weight": 1.0,
+    "type": "factual",
+    "expected_facts": ["Windows Hello"]
+  },
+  {
+    "id": 21,
+    "query": "BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["5090", "5080", "5070 Ti", "24GB", "16GB", "12GB", "175W", "140W"]
+  },
+  {
+    "id": 22,
+    "query": "請比較三個型號的處理器規格。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Ultra 9", "275HX"]
+  },
+  {
+    "id": 23,
+    "query": "BZH 與 BYH 的顯示卡 AI Boost 頻率有什麼不同？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["1797", "1902"]
+  },
+  {
+    "id": 24,
+    "query": "BYH 和 BXH 的 GPU 效能規格有哪些差異？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["5080", "16GB", "5070 Ti", "12GB"]
+  },
+  {
+    "id": 25,
+    "query": "請比較 BZH、BYH、BXH 的螢幕規格，包括解析度、更新率和面板類型。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "2560", "1600", "240Hz", "OLED"]
+  },
+  {
+    "id": 26,
+    "query": "三個 AORUS MASTER 16 型號的記憶體和 SSD 擴充規格是否相同？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同"]
+  },
+  {
+    "id": 27,
+    "query": "請比較 BZH 與 BXH 的顯示卡 VRAM 容量。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["24GB", "12GB"]
+  },
+  {
+    "id": 28,
+    "query": "BZH 和 BYH 的處理器是否相同？請說明差異。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Ultra 9"]
+  },
+  {
+    "id": 29,
+    "query": "請列出三個型號在最大記憶體容量、記憶體頻率及插槽數量上的差異。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "64GB", "5600", "2"]
+  },
+  {
+    "id": 30,
+    "query": "比較 BZH、BYH 和 BXH 的儲存裝置插槽規格與最高 SSD 容量。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "4TB", "Gen5"]
+  },
+  {
+    "id": 31,
+    "query": "三個型號的鍵盤規格是否有不同？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "3-zone", "RGB"]
+  },
+  {
+    "id": 32,
+    "query": "請比較 BZH、BYH、BXH 的連接埠配置。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["Thunderbolt 5", "Thunderbolt 4"]
+  },
+  {
+    "id": 33,
+    "query": "BZH 與 BXH 的 Thunderbolt 5 和 Thunderbolt 4 支援情況是否一樣？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["不同"]
+  },
+  {
+    "id": 34,
+    "query": "請比較三個型號的 Wi-Fi、藍牙及有線網路規格。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Wi-Fi 7", "5.4"]
+  },
+  {
+    "id": 35,
+    "query": "三個型號的電池容量與變壓器功率有何不同？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "99Wh", "330W"]
+  },
+  {
+    "id": 36,
+    "query": "請比較 BZH、BYH 和 BXH 的尺寸與重量。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "2.5", "357"]
+  },
+  {
+    "id": 37,
+    "query": "三個型號是否都配備相同的攝影機與 Windows Hello 功能？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Windows Hello"]
+  },
+  {
+    "id": 38,
+    "query": "BZH、BYH、BXH 的顏色是否有差異？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Dark Tide"]
+  },
+  {
+    "id": 39,
+    "query": "請比較三個型號的音效系統規格。",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "Dolby Atmos"]
+  },
+  {
+    "id": 40,
+    "query": "如果只看 Context 中的規格，BZH、BYH、BXH 哪些硬體規格完全相同？哪些不同？",
+    "weight": 1.5,
+    "type": "comparison",
+    "expected_facts": ["相同", "不同"]
+  },
+  {
+    "id": 41,
+    "query": "這台筆電的記憶體最高可以到多少？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["64GB"]
+  },
+  {
+    "id": 42,
+    "query": "請問這系列筆電用什麼處理器？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Ultra 9", "275HX"]
+  },
+  {
+    "id": 43,
+    "query": "這台的顯示卡是哪一張？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["5090", "5080", "5070 Ti"]
+  },
+  {
+    "id": 44,
+    "query": "螢幕有多大、解析度和更新率是多少？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["16", "2560", "1600", "240Hz"]
+  },
+  {
+    "id": 45,
+    "query": "這款筆電有幾個 M.2 SSD 插槽？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["2"]
+  },
+  {
+    "id": 46,
+    "query": "請問記憶體可以擴充嗎？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["可以", "64GB"]
+  },
+  {
+    "id": 47,
+    "query": "這系列的電池容量是多少？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["99Wh"]
+  },
+  {
+    "id": 48,
+    "query": "這台電腦的變壓器需要幾瓦？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["330W"]
+  },
+  {
+    "id": 49,
+    "query": "它有支援 Wi-Fi 7 嗎？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Wi-Fi 7"]
+  },
+  {
+    "id": 50,
+    "query": "這台有 Thunderbolt 嗎？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Thunderbolt"]
+  },
+  {
+    "id": 51,
+    "query": "這系列筆電的鍵盤是什麼類型？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["3-zone RGB", "N-Key"]
+  },
+  {
+    "id": 52,
+    "query": "它的重量大約是多少？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["2.5"]
+  },
+  {
+    "id": 53,
+    "query": "這款的尺寸是多少？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["357", "254"]
+  },
+  {
+    "id": 54,
+    "query": "這系列有沒有 IR Webcam？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["IR Webcam"]
+  },
+  {
+    "id": 55,
+    "query": "這台筆電的顏色是什麼？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Dark Tide"]
+  },
+  {
+    "id": 56,
+    "query": "這三個型號的螢幕規格都一樣嗎？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["一樣", "OLED"]
+  },
+  {
+    "id": 57,
+    "query": "這系列最高可以搭載多大容量的 SSD？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["4TB"]
+  },
+  {
+    "id": 58,
+    "query": "這台支援 Windows Hello 臉部登入嗎？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Windows Hello"]
+  },
+  {
+    "id": 59,
+    "query": "請問這系列的網路連線功能有哪些？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["Wi-Fi 7", "LAN"]
+  },
+  {
+    "id": 60,
+    "query": "這台筆電有幾個 USB Type-C？",
+    "weight": 1.5,
+    "type": "ambiguous",
+    "expected_facts": ["兩個"]
+  },
+  {
+    "id": 61,
+    "query": "BZH 購買時有沒有附贈滑鼠？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 62,
+    "query": "BYH 可以選購白色或銀色版本嗎？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 63,
+    "query": "BXH 的電池續航力可以使用幾個小時？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 64,
+    "query": "這三個型號的保固期限各是幾年？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 65,
+    "query": "BZH 的 CPU 在 Cinebench R23 多核心跑分是多少？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 66,
+    "query": "BYH 玩 Cyberpunk 2077 在 2K 解析度下可以跑多少 FPS？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 67,
+    "query": "BXH 的風扇噪音最高有幾分貝？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 68,
+    "query": "BZH 是否支援觸控螢幕？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 69,
+    "query": "BYH 的螢幕最大亮度在一般使用模式下是多少 nits？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 70,
+    "query": "BXH 是否內建指紋辨識器？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 71,
+    "query": "BZH 的 RAM 是由哪一家廠商生產的？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 72,
+    "query": "BYH 可以自行更換 CPU 嗎？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 73,
+    "query": "BXH 是否支援 RAID 0？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 74,
+    "query": "BZH 的內建 SSD 讀寫速度是多少 MB/s？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 75,
+    "query": "BYH 的鍵盤 RGB 可以自訂每一顆按鍵的顏色嗎？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 76,
+    "query": "BXH 是否附贈 Windows Office 授權？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 77,
+    "query": "BZH 的散熱系統使用幾根熱導管？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 78,
+    "query": "BYH 是否支援 eSIM 行動網路？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 79,
+    "query": "BXH 的價格在台灣是多少？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 80,
+    "query": "這系列筆電的售後維修據點有哪些？",
+    "weight": 2.0,
+    "type": "hallucination_test",
+    "expected_facts": ["規格表中未提供此資訊"]
+  },
+  {
+    "id": 81,
+    "query": "What is the GPU of BZH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["5090"]
+  },
+  {
+    "id": 82,
+    "query": "How much RAM does BYH support at maximum?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["64GB"]
+  },
+  {
+    "id": 83,
+    "query": "What is the screen resolution and refresh rate of BXH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["2560", "1600", "240Hz"]
+  },
+  {
+    "id": 84,
+    "query": "Does BZH support Wi-Fi 7?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Wi-Fi 7"]
+  },
+  {
+    "id": 85,
+    "query": "How many M.2 SSD slots are available on BYH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["2"]
+  },
+  {
+    "id": 86,
+    "query": "What processor is used in AORUS MASTER 16 BXH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Ultra 9", "275HX"]
+  },
+  {
+    "id": 87,
+    "query": "What is the maximum graphics power of the BZH GPU?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["175W"]
+  },
+  {
+    "id": 88,
+    "query": "How much VRAM does the BYH graphics card have?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["16GB"]
+  },
+  {
+    "id": 89,
+    "query": "Does BXH have Thunderbolt 5 and Thunderbolt 4 ports?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Thunderbolt 4"]
+  },
+  {
+    "id": 90,
+    "query": "What type of keyboard does BZH use?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["3-zone", "RGB"]
+  },
+  {
+    "id": 91,
+    "query": "What is the battery capacity of BYH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["99Wh"]
+  },
+  {
+    "id": 92,
+    "query": "What AC adapter wattage comes with BXH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["330W"]
+  },
+  {
+    "id": 93,
+    "query": "What are the dimensions and weight of BZH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["357", "2.5"]
+  },
+  {
+    "id": 94,
+    "query": "What color is the AORUS MASTER 16 BYH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Dark Tide"]
+  },
+  {
+    "id": 95,
+    "query": "Does BZH support Windows Hello facial authentication?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Windows Hello"]
+  },
+  {
+    "id": 96,
+    "query": "What connectivity options are available on BYH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["Wi-Fi 7", "Bluetooth", "Thunderbolt 4"]
+  },
+  {
+    "id": 97,
+    "query": "Are the display specifications identical across BZH, BYH, and BXH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["identical", "OLED"]
+  },
+  {
+    "id": 98,
+    "query": "Compare the GPUs of BZH, BYH, and BXH.",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["5090", "5080", "5070"]
+  },
+  {
+    "id": 99,
+    "query": "Does the specification sheet mention the warranty period for BXH?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["This information is not provided"]
+  },
+  {
+    "id": 100,
+    "query": "What is the maximum SSD storage capacity supported by the AORUS MASTER 16 series?",
+    "weight": 2.0,
+    "type": "multilingual",
+    "expected_facts": ["4TB"]
+  }
 ]

@@ -2,7 +2,8 @@ import time
 import json
 import subprocess
 from llama_cpp import Llama
-from vector_search import SimpleVectorDB 
+from vector_search import SimpleVectorDB
+import re 
 
 def get_vram_usage():
     try:
@@ -58,18 +59,30 @@ def main():
         search_results = db.search(query, top_k=15)
         context = "\n".join([f"- {res['text']}" for res in search_results])
         
-        # 🔧 調整 2：針對比較與翻譯下達死命令
-        system_prompt = (
+        is_english_query = not bool(re.search(r'[\u4e00-\u9fa5]', query))
+        
+        # 2. 針對語言給予極度明確、具體的單一指令
+        if is_english_query:
+            lang_enforcement = (
+                "CRITICAL WARNING: The user asked in ENGLISH. "
+                "Even though the [Context] is in Traditional Chinese, you MUST translate the facts and reply in 100% PURE ENGLISH. "
+                "DO NOT output ANY Chinese characters. If missing, reply EXACTLY 'This information is not provided'."
+            )
+        else:
+            lang_enforcement = (
+                "請用繁體中文回答。若規格表中未提供資訊，請回答 '規格表中未提供此資訊'。"
+            )
+
+        assistant_sys_prompt = (
             "You are a professional GIGABYTE laptop customer service AI.\n"
             "Strict Rules:\n"
-            "1. Base your answer STRICTLY on the [Context] provided below.\n"
-            "2. If the [Context] does not contain the answer, reply EXACTLY with '規格表中未提供此資訊' or 'This information is not provided'. DO NOT guess, infer, or hallucinate.\n"
-            "3. You MUST answer entirely in the EXACT SAME LANGUAGE as the user's question (Translate the context internally before answering. If asked in English, reply ONLY in English).\n"
-            "4. When asked to compare, carefully identify the differences between models (e.g., BZH vs BXH) from the context.\n"
-            "5. IMPORTANT: If the user asks about 'this laptop' without specifying the exact model (BZH, BYH, or BXH), you MUST explicitly list the specifications for ALL THREE models, or clearly state that the specification applies to the entire AM6H series."
+            "1. Base your answer STRICTLY on the [Context].\n"
+            f"2. {lang_enforcement}\n"
+            "3. When comparing models, explicitly list the specific specs for EACH model.\n"
+            "4. If the user asks about 'this laptop' without specifying, list BZH, BYH, and BXH explicitly."
         )
         
-        prompt = f"<|im_start|>system\n{system_prompt}\n\n[Context]:\n{context}<|im_end|>\n<|im_start|>user\n{query}<|im_end|>\n<|im_start|>assistant\n"
+        prompt = f"<|im_start|>system\n{assistant_sys_prompt}\n\n[Context]:\n{context}<|im_end|>\n<|im_start|>user\n{query}<|im_end|>\n<|im_start|>assistant\n"
         
         print("🤖 AI 助手回答：", end="", flush=True)
         
@@ -79,7 +92,7 @@ def main():
         
         stream = llm(
             prompt,
-            max_tokens=300,
+            max_tokens=800,
             temperature=0.0, 
             stop=["<|im_end|>", "<|im_start|>"], 
             stream=True

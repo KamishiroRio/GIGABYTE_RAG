@@ -1,0 +1,53 @@
+============================================================
+🚨 錯誤與待確認案例 (Error Cases)
+============================================================
+共發現 5 筆異常
+
+[COMPARISON] ID: 21 | Q: BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。
+A: BZH、BYH 和 BXH 的顯示卡在 GPU、VRAM 和最大圖形功耗方面有以下差異：
+
+- **AORUS MASTER 16 BZH**：
+  - GPU：NVIDIA® GeForce RTX™ 5090 Laptop GPU
+  - VRAM：12GB GDDR7
+  - 最大圖形功耗：175W
+
+- **AORUS MASTER 16 BXH**：
+  - GPU：NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU
+  - VRAM：8GB GDDR7
+  - 最大圖形功耗：140W
+
+- **AORUS MASTER 16 BYH**：
+  - GPU：NVIDIA® GeForce RTX™ 5080 Laptop GPU
+  - VRAM：16GB GDDR7
+  - 最大圖形功耗：175W
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字: ['24GB'])
+**************************************************
+[COMPARISON] ID: 23 | Q: BZH 與 BYH 的顯示卡 AI Boost 頻率有什麼不同？
+A: AORUS MASTER 16 BZH 的顯示晶片 AI Boost 頻率为 1702 MHz (1597 MHz Boost Clock + 200 MHz OC)。
+
+AORUS MASTER 16 BYH 的顯示晶片 AI Boost 頻率为 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)。
+
+因此，BYH 的顯示晶片 AI Boost 頻率比 BZH 的高。
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字: ['1797'])
+**************************************************
+[COMPARISON] ID: 24 | Q: BYH 和 BXH 的 GPU 效能規格有哪些差異？
+A: BYH 和 BXH 的 GPU 效能規格主要有以下幾點差異：
+
+- BYH 使用 NVIDIA® GeForce RTX™ 5080 Laptop GPU，而 BXH 使用 NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU。
+- BYH 的 GPU 頻率為 1902 MHz，BXH 的 GPU 頻率為 1962 MHz。
+- BYH 的 GPU 最大功耗為 175W，BXH 的 GPU 最大功耗為 140W。
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字: ['16GB', '12GB'])
+**************************************************
+[AMBIGUOUS] ID: 60 | Q: 這台筆電有幾個 USB Type-C？
+A: 這台筆電有兩個 USB Type-C 型接埠。
+Retrieval: ❌ 檢索遺漏: ['兩個']
+Judge: ✅ 驗證通過
+**************************************************
+[HALLUCINATION_TEST] ID: 69 | Q: BYH 的螢幕最大亮度在一般使用模式下是多少 nits？
+A: AORUS MASTER 16 BYH 的顯示器最大亮度在一般使用模式下為 500 nits。
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字: ['未拒答 (未命中: 規格表中未提供此資訊)'])
+**************************************************
