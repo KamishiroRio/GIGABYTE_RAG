@@ -31,7 +31,7 @@ curl -LsSf [https://astral.sh/uv/install.sh](https://astral.sh/uv/install.sh) | 
 
 # Set up env
 uv venv .venv
-source .venv/bin/activate
+source .venv/Scripts/activate
 ```
 
 ### 3. Install dependencies
