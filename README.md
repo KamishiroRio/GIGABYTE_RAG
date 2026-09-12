@@ -170,7 +170,7 @@ While the system achieves high accuracy, the automated evaluation successfully i
 
 ### TTFT, TPS and VRAM test (manual)
 The following measurements were collected during interactive inference on the testing environment described above. Values may vary depending on GPU background usage, prompt length, and system load.
-| Question (測試問題) | Response (系統回答) | TTFT (s) | TPS | VRAM Usage |
+| Question | Response | TTFT (s) | TPS | VRAM Usage |
 | :--- | :--- | :--- | :--- | :--- |
 | What is the GPU of BZH? | The GPU of AORUS MASTER 16 BZH is NVIDIA® GeForce RTX™ 5090 Laptop GPU. | 1.112 | 75.93 | 2369 MB |
 | BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。 | BZH、BYH 和 BXH 的顯示卡在 GPU、VRAM 和最大圖形功耗方面如下：<br><br>**BZH**:<br>- GPU: NVIDIA® GeForce RTX™ 5090 Laptop GPU<br>- VRAM: 24GB GDDR7<br>- 最大圖形功耗: 175W<br><br>**BYH**:<br>- GPU: NVIDIA® GeForce RTX™ 5080 Laptop GPU<br>- VRAM: 16GB GDDR7<br>- 最大圖形功耗: 175W<br><br>**BXH**:<br>- GPU: NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU<br>- VRAM: 12GB GDDR7<br>- 最大圖形功耗: 140W | 0.799 | 87.33 | 2373 MB |
