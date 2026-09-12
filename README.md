@@ -31,7 +31,7 @@ cd GIGABYTE_RAG
 # Install uv (if not installed)
 curl -LsSf https://astral.sh/uv/install.sh | sh
 
-# Sync all dependencies magically
+# Sync all dependencies
 uv sync
 ```
 
