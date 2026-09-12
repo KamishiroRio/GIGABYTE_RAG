@@ -1,9 +1,9 @@
 import time
 import json
 import subprocess
+import re 
 from llama_cpp import Llama
 from vector_search import SimpleVectorDB
-import re 
 
 def get_vram_usage():
     try:
@@ -55,13 +55,11 @@ def main():
             break
             
         print("🔍 正在檢索相關規格...")
-        # 🔧 調整 1：將 Top-K 加大到 15，解決多意圖與比較題漏抓資料的問題
         search_results = db.search(query, top_k=15)
         context = "\n".join([f"- {res['text']}" for res in search_results])
         
         is_english_query = not bool(re.search(r'[\u4e00-\u9fa5]', query))
         
-        # 2. 針對語言給予極度明確、具體的單一指令
         if is_english_query:
             lang_enforcement = (
                 "CRITICAL WARNING: The user asked in ENGLISH. "
@@ -78,8 +76,10 @@ def main():
             "Strict Rules:\n"
             "1. Base your answer STRICTLY on the [Context].\n"
             f"2. {lang_enforcement}\n"
-            "3. When comparing models, explicitly list the specific specs for EACH model.\n"
-            "4. If the user asks about 'this laptop' without specifying, list BZH, BYH, and BXH explicitly."
+            "3. DO NOT provide customer service hotline, contact info, or suggestions to ask dealers.\n"
+            "4. When comparing models, explicitly list the specific specs for EACH model.\n"
+            "5. If the user asks about 'this laptop' without specifying, list BZH, BYH, and BXH explicitly."
+            "6. IF the user's query is completely unrelated to laptop specifications (e.g., coding, general chat, weather), you MUST reply EXACTLY with: '我是專業的技嘉筆電客服 AI，只能回答與筆電規格相關的問題。'"
         )
         
         prompt = f"<|im_start|>system\n{assistant_sys_prompt}\n\n[Context]:\n{context}<|im_end|>\n<|im_start|>user\n{query}<|im_end|>\n<|im_start|>assistant\n"
@@ -109,8 +109,8 @@ def main():
         end_time = time.time()
         print("\n")
         
-        ttft = first_token_time - start_time
-        total_gen_time = end_time - first_token_time
+        ttft = first_token_time - start_time if first_token_time else 0
+        total_gen_time = end_time - first_token_time if first_token_time else 0
         tps = token_count / total_gen_time if total_gen_time > 0 else 0
         current_vram = get_vram_usage()
         current_app_vram = current_vram - base_vram

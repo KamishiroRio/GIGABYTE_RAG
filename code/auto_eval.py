@@ -65,7 +65,10 @@ def main():
         query = case['query']
         weight = case.get('weight', 1.0)
         q_type = case.get('type', 'general')
-        expected_facts = case.get('expected_facts', [])
+        
+        # 讀取雙軌測資
+        retrieval_facts = case.get('retrieval_facts', [])
+        answer_facts = case.get('answer_facts', [])
         
         total_weight += weight
         type_stats[q_type]["weight"] += weight
@@ -73,7 +76,7 @@ def main():
         print(f"[{idx}/{len(test_cases)}] [{q_type.upper()}] 測試問題: {query}")
         
         # ==========================================
-        # 階段 A：檢索與 Recall (套用終極脫水清洗)
+        # 階段 A：檢索與 Recall (針對 retrieval_facts)
         # ==========================================
         search_results = db.search(query, top_k=15)
         context = "\n".join([f"- {res['text']}" for res in search_results])
@@ -81,7 +84,12 @@ def main():
         cleaned_context = super_clean(context)
         context_missing_facts = []
         
-        for fact in expected_facts:
+        # 將所有的 required_values 攤平來檢查
+        expected_retrieval_strings = []
+        for rf in retrieval_facts:
+            expected_retrieval_strings.extend(rf.get('required_values', []))
+            
+        for fact in expected_retrieval_strings:
             if fact in ABSTRACT_TERMS:
                 continue
             if super_clean(fact) not in cleaned_context:
@@ -98,10 +106,7 @@ def main():
         # ==========================================
         # 動態語言判斷與 Prompt 注入
         # ==========================================
-        # 1. 判斷題目是否為純英文 (沒有中文字)
         is_english_query = not bool(re.search(r'[\u4e00-\u9fa5]', query))
-        
-        # 2. 針對語言給予極度明確、具體的單一指令
         if is_english_query:
             lang_enforcement = (
                 "CRITICAL WARNING: The user asked in ENGLISH. "
@@ -118,14 +123,15 @@ def main():
             "Strict Rules:\n"
             "1. Base your answer STRICTLY on the [Context].\n"
             f"2. {lang_enforcement}\n"
-            "3. When comparing models, explicitly list the specific specs for EACH model.\n"
-            "4. If the user asks about 'this laptop' without specifying, list BZH, BYH, and BXH explicitly."
+            "3. DO NOT provide customer service hotline, contact info, or suggestions to ask dealers.\n" 
+            "4. When comparing models, explicitly list the specific specs for EACH model.\n"
+            "5. If the user asks about 'this laptop' without specifying, list BZH, BYH, and BXH explicitly."
+            "6. IF the user's query is completely unrelated to laptop specifications (e.g., coding, general chat, weather), you MUST reply EXACTLY with: '我是專業的技嘉筆電客服 AI，只能回答與筆電規格相關的問題。'"
         )
-        
         rag_prompt = f"<|im_start|>system\n{assistant_sys_prompt}\n\n[Context]:\n{context}<|im_end|>\n<|im_start|>user\n{query}<|im_end|>\n<|im_start|>assistant\n"
         
         # ==========================================
-        # 階段 B：生成回答
+        # 階段 B：生成回答 
         # ==========================================
         start_time = time.time()
         response_stream = llm(rag_prompt, max_tokens=800, temperature=0.0, stop=["<|im_end|>", "<|im_start|>"], stream=True)
@@ -148,55 +154,76 @@ def main():
         tps_list.append(tps)
 
         print(f"   > AI 回答: {answer[:40].replace(chr(10), ' ')}...") 
+
         # ==========================================
-        # 階段 C：Hybrid 事實查核 (加入拒答題嚴格防禦)
+        # 階段 C：Hybrid 事實查核 (針對 answer_facts 驗證)
         # ==========================================
         missing_facts = []
         semantic_hits = []
         
-        # 終極語言防禦：檢查題目與答案的語言一致性
         query_has_chinese = bool(re.search(r'[\u4e00-\u9fa5]', query))
         answer_has_chinese = bool(re.search(r'[\u4e00-\u9fa5]', answer))
         
+        # 判斷這題是否為「拒答題」
+        is_rejection_expected = any(str(af.get('expected_value')) == "拒答" for af in answer_facts)
+        
         if not query_has_chinese and answer_has_chinese:
             missing_facts.append("Language Mismatch (English query answered with Chinese)")
-        elif any("this information is not provided" in str(f).lower() for f in expected_facts) and answer_has_chinese:
-            missing_facts.append("Language Mismatch (Expected English rejection, got Chinese)")
         else:
             answer_emb = embedder.encode(answer, convert_to_tensor=True)
             cleaned_answer = super_clean(answer)
+            REJECTION_TERMS = {
+                "規格表中未提供此資訊", 
+                "thisinformationisnotprovided",
+                "我是專業的技嘉筆電客服"
+            }
             
-            # 定義拒答標準詞
-            REJECTION_TERMS = {"規格表中未提供此資訊", "thisinformationisnotprovided"}
-            
-            for fact in expected_facts:
-                clean_fact = super_clean(fact)
+            for af in answer_facts:
+                expected_val = str(af.get('expected_value'))
+                aliases = af.get('aliases', [])
                 
-                # 🛡️ 針對「拒答題」的嚴格防禦：禁止語意放水與廢話
-                if clean_fact in REJECTION_TERMS:
-                    if clean_fact not in cleaned_answer:
-                        missing_facts.append(f"未拒答 (未命中: {fact})")
-                    continue # 拒答題判斷完畢，直接跳過語意比對！
+                if expected_val == "拒答":
+                    found_rejection = False
+                    matched_term = ""
+                    for term in REJECTION_TERMS:
+                        if term in cleaned_answer:
+                            found_rejection = True
+                            matched_term = term
+                            break
+                            
+                    if not found_rejection:
+                        missing_facts.append("未拒答 (未命中拒答關鍵字)")
+                    continue
                 
-                # 1. 極速字串比對 (一般事實)
-                if clean_fact in cleaned_answer:
+                # 🔍 一般事實：優先檢查別名 (Aliases) 字串命中
+                alias_matched = False
+                for alias in aliases:
+                    if super_clean(str(alias)) in cleaned_answer:
+                        alias_matched = True
+                        break
+                        
+                if alias_matched:
                     continue
                     
-                # 2. 語意相似度檢查 (一般事實)
-                fact_emb = embedder.encode(fact, convert_to_tensor=True)
+                # 語意相似度：如果字串都沒中，才比較 expected_value
+                fact_emb = embedder.encode(expected_val, convert_to_tensor=True)
                 cosine_score = util.cos_sim(answer_emb, fact_emb).item()
                 
                 if cosine_score >= 0.82:
-                    semantic_hits.append(f"{fact}(sim:{cosine_score:.2f})")
+                    semantic_hits.append(f"{expected_val}(sim:{cosine_score:.2f})")
                 else:
-                    missing_facts.append(fact)
+                    missing_facts.append(expected_val)
         
+        # 判斷 Token 是否被截斷
+        if token_count >= 795: # 緩衝值
+            missing_facts.append("Generation Truncated (達到 Token 上限)")
+            
         if not missing_facts:
             score = 1.0
             reason_msg = f"✅ 驗證通過" + (f" (語意命中: {semantic_hits})" if semantic_hits else "")
         else:
             score = 0.0
-            reason_msg = f"❌ 驗證失敗 (遺漏關鍵字: {missing_facts})"
+            reason_msg = f"❌ 驗證失敗 (遺漏關鍵字或規則: {missing_facts})"
 
         weighted_score = score * weight
         total_weighted_score += weighted_score

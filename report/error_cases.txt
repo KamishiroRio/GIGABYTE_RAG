@@ -3,51 +3,41 @@
 ============================================================
 共發現 5 筆異常
 
-[COMPARISON] ID: 21 | Q: BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。
-A: BZH、BYH 和 BXH 的顯示卡在 GPU、VRAM 和最大圖形功耗方面有以下差異：
-
-- **AORUS MASTER 16 BZH**：
-  - GPU：NVIDIA® GeForce RTX™ 5090 Laptop GPU
-  - VRAM：12GB GDDR7
-  - 最大圖形功耗：175W
-
-- **AORUS MASTER 16 BXH**：
-  - GPU：NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU
-  - VRAM：8GB GDDR7
-  - 最大圖形功耗：140W
-
-- **AORUS MASTER 16 BYH**：
-  - GPU：NVIDIA® GeForce RTX™ 5080 Laptop GPU
-  - VRAM：16GB GDDR7
-  - 最大圖形功耗：175W
-Retrieval: ✅ 檢索成功
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['24GB'])
-**************************************************
 [COMPARISON] ID: 23 | Q: BZH 與 BYH 的顯示卡 AI Boost 頻率有什麼不同？
-A: AORUS MASTER 16 BZH 的顯示晶片 AI Boost 頻率为 1702 MHz (1597 MHz Boost Clock + 200 MHz OC)。
-
-AORUS MASTER 16 BYH 的顯示晶片 AI Boost 頻率为 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)。
-
-因此，BYH 的顯示晶片 AI Boost 頻率比 BZH 的高。
+A: AORUS MASTER 16 BZH 的顯示晶片 AI Boost 頻率为 1702 MHz (1597 MHz Boost Clock + 200 MHz OC)，而 AORUS MASTER 16 BYH 的顯示晶片 AI Boost 頻率为 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)。
 Retrieval: ✅ 檢索成功
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['1797'])
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['1797'])
 **************************************************
 [COMPARISON] ID: 24 | Q: BYH 和 BXH 的 GPU 效能規格有哪些差異？
-A: BYH 和 BXH 的 GPU 效能規格主要有以下幾點差異：
+A: BYH 和 BXH 的 GPU 效能規格主要差異如下：
 
 - BYH 使用 NVIDIA® GeForce RTX™ 5080 Laptop GPU，而 BXH 使用 NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU。
 - BYH 的 GPU 頻率為 1902 MHz，BXH 的 GPU 頻率為 1962 MHz。
-- BYH 的 GPU 最大功耗為 175W，BXH 的 GPU 最大功耗為 140W。
+- BYH 的 GPU 最大功耗为 175W，BXH 的 GPU 最大功耗为 140W。
 Retrieval: ✅ 檢索成功
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['16GB', '12GB'])
-**************************************************
-[AMBIGUOUS] ID: 60 | Q: 這台筆電有幾個 USB Type-C？
-A: 這台筆電有兩個 USB Type-C 型接埠。
-Retrieval: ❌ 檢索遺漏: ['兩個']
-Judge: ✅ 驗證通過
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['16GB', '12GB'])
 **************************************************
 [HALLUCINATION_TEST] ID: 69 | Q: BYH 的螢幕最大亮度在一般使用模式下是多少 nits？
-A: AORUS MASTER 16 BYH 的顯示器最大亮度在一般使用模式下為 500 nits。
+A: BYH 的螢幕最大亮度在一般使用模式下是 500 nits。
 Retrieval: ✅ 檢索成功
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['未拒答 (未命中: 規格表中未提供此資訊)'])
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['未拒答 (未命中拒答關鍵字)'])
+**************************************************
+[HALLUCINATION_TEST] ID: 75 | Q: BYH 的鍵盤 RGB 可以自訂每一顆按鍵的顏色嗎？
+A: BYH 的鍵盤 RGB 為 3-zone Backlit Keyboard，支援自訂鍵盤顏色的功能。不過，具體的自訂細節（如每一顆按鍵的顏色）可能需要查看更詳細的用戶指南或設定界面，因為這可能會因操作系統的不同而有所差異。
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['未拒答 (未命中拒答關鍵字)'])
+**************************************************
+[MULTILINGUAL] ID: 96 | Q: What connectivity options are available on BYH?
+A: On the AORUS MASTER 16 BYH, the connectivity options available are:
+
+- WIFI 7 (802.11be 2x2)
+- LAN: 1G
+- Bluetooth v5.4
+- HDMI 2.1
+- Type-A support USB3.2 Gen2
+- Type-C with Thunderbolt™5 (support USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+- MicroSD (UHS-II)
+- Audio Jack (support mic / headphone combo)
+Retrieval: ✅ 檢索成功
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['Thunderbolt 4'])
 **************************************************

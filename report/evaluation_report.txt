@@ -1,10 +1,10 @@
 ============================================================
 🏆 GIGABYTE RAG 系統評測報告
 ============================================================
-🌟 最終準確率: 95.94% | 🎯 Recall@15: 99.00%
+🌟 最終準確率: 94.38% | 🎯 Recall@15: 100.00%
 
 [FACTUAL] Q: 請問 AORUS MASTER 16 BZH 的處理器型號、核心數與執行緒數是多少？
-A: AORUS MASTER 16 BZH 的中央處理器型號為：Intel® Core™ Ultra 9 Processor 275HX。核心數為：24 cores，執行緒數為：24 threads。
+A: AORUS MASTER 16 BZH 的中央處理器型號為：Intel® Core™ Ultra 9 Processor 275HX。核心數與執行緒數為：24 cores, 24 threads。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: AORUS MASTER 16 BYH 使用哪一款 NVIDIA 顯示晶片？
@@ -16,7 +16,7 @@ A: AORUS MASTER 16 BXH 的顯示晶片記憶體容量為 12GB GDDR7。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: 請問 BZH 的 OLED 螢幕解析度是多少？
-A: AORUS MASTER 16 BZH 的顯示器解析度為 2560×1600。
+A: AORUS MASTER 16 BZH 的顯示器解析度為：16:10 OLED WQXGA (2560×1600)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BYH 的螢幕更新率和反應時間分別是多少？
@@ -28,23 +28,23 @@ A: AORUS MASTER 16 BXH 的記憶體最高支援 64GB。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BZH 有幾個 SO-DIMM 記憶體插槽？
-A: AORUS MASTER 16 BZH 的記憶體為：Up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion。因此，BZH 標準配置有 2 個 SO-DIMM 記憶體插槽。
+A: AORUS MASTER 16 BZH 的記憶體為：Up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion。因此，BZH 有 2 個 SO-DIMM 記憶體插槽。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: 請問 BYH 最多可以安裝多少容量的 SSD？
-A: AORUS MASTER 16 BYH 的儲存裝置最多可以安裝 4TB 的 PCIe NVMe™ M.2 SSD。
+A: AORUS MASTER 16 BYH 最多可以安裝 4TB 的 PCIe NVMe™ M.2 SSD。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BXH 支援哪些 M.2 PCIe 插槽規格？
-A: AORUS MASTER 16 BXH 的儲存裝置為：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots。因此，BXH 支援的 M.2 PCIe 插槽規格為 PCIe Gen5 和 PCIe Gen4x4。
+A: AORUS MASTER 16 BXH 的儲存裝置為：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots。因此，BXH 支援 PCIe Gen5 和 PCIe Gen4x4 的 M.2 插槽規格。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BZH 的鍵盤是否支援 N-Key？
-A: AORUS MASTER 16 BZH 的鍵盤支援 N-Key。
+A: BZH 的鍵盤支援 N-Key。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BYH 配備哪一種 Wi-Fi 標準？
-A: AORUS MASTER 16 BYH 配備的 Wi-Fi 標準是：WIFI 7 (802.11be 2x2)。
+A: AORUS MASTER 16 BYH 配備的 Wi-Fi 標準為：WIFI 7 (802.11be 2x2)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BXH 的 Bluetooth 版本是多少？
@@ -52,10 +52,7 @@ A: AORUS MASTER 16 BXH 的 Bluetooth 版本是 v5.4。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: 請問 BZH 是否有 Thunderbolt 5？
-A: 是的，AORUS MASTER 16 BZH 搭載有 Thunderbolt 5，具體連接埠如下：
-
-- 左側：1 x Type-A 支援 USB3.2 Gen2
-- 右側：1 x Type-C with Thunderbolt™5 (支援 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+A: 是的，AORUS MASTER 16 BZH 的左側有 Thunderbolt 5 的連接埠。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: AORUS MASTER 16 BYH 的電池容量是多少 Wh？
@@ -71,7 +68,7 @@ A: AORUS MASTER 16 BZH 的重量為 ~2.5 kg。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BYH 的機身尺寸是多少？
-A: AORUS MASTER 16 BYH 的尺寸為：357 x 254 x 23~29.9 mm。
+A: AORUS MASTER 16 BYH 的尺寸為：357 x 254 x 23~29.9 mm *The dimensions of the laptop may vary according to the configuration, manufacturing process and measurement method, please refer to the actual situation.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: BXH 的預設機身顏色是什麼？
@@ -79,34 +76,32 @@ A: AORUS MASTER 16 BXH 的預設機身顏色為：Dark Tide。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: AORUS MASTER 16 BZH 的攝影機解析度是多少？
-A: AORUS MASTER 16 BZH 的攝影機解析度為 FHD (1080p)。
+A: AORUS MASTER 16 BZH 的視訊鏡頭解析度為：FHD (1080p)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [FACTUAL] Q: 請問 BYH 是否支援 Windows Hello 臉部辨識？
-A: 是的，AORUS MASTER 16 BYH 的視訊鏡頭支援 Windows Hello 面部辨識功能。
+A: 是的，AORUS MASTER 16 BYH 的視訊鏡頭支援 Windows Hello 面部辨識。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: BZH、BYH 和 BXH 的顯示卡有什麼差異？請列出各自的 GPU、VRAM 與最大圖形功耗。
-A: BZH、BYH 和 BXH 的顯示卡在 GPU、VRAM 和最大圖形功耗方面有以下差異：
+A: BZH:
+- GPU: NVIDIA® GeForce RTX™ 5090 Laptop GPU
+- VRAM: 24GB GDDR7
+- 最大圖形功耗: 175W
 
-- **AORUS MASTER 16 BZH**：
-  - GPU：NVIDIA® GeForce RTX™ 5090 Laptop GPU
-  - VRAM：12GB GDDR7
-  - 最大圖形功耗：175W
+BYH:
+- GPU: NVIDIA® GeForce RTX™ 5080 Laptop GPU
+- VRAM: 16GB GDDR7
+- 最大圖形功耗: 175W
 
-- **AORUS MASTER 16 BXH**：
-  - GPU：NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU
-  - VRAM：8GB GDDR7
-  - 最大圖形功耗：140W
-
-- **AORUS MASTER 16 BYH**：
-  - GPU：NVIDIA® GeForce RTX™ 5080 Laptop GPU
-  - VRAM：16GB GDDR7
-  - 最大圖形功耗：175W
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['24GB']) -> Score: 0
+BXH:
+- GPU: NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU
+- VRAM: 12GB GDDR7
+- 最大圖形功耗: 140W
+Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較三個型號的處理器規格。
-A: 比較三個型號的處理器規格如下：
+A: 三個型號的處理器規格如下：
 
 - **AORUS MASTER 16 BXH**：
   - 中央處理器：Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)
@@ -121,20 +116,16 @@ A: 比較三個型號的處理器規格如下：
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: BZH 與 BYH 的顯示卡 AI Boost 頻率有什麼不同？
-A: AORUS MASTER 16 BZH 的顯示晶片 AI Boost 頻率为 1702 MHz (1597 MHz Boost Clock + 200 MHz OC)。
-
-AORUS MASTER 16 BYH 的顯示晶片 AI Boost 頻率为 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)。
-
-因此，BYH 的顯示晶片 AI Boost 頻率比 BZH 的高。
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['1797']) -> Score: 0
+A: AORUS MASTER 16 BZH 的顯示晶片 AI Boost 頻率为 1702 MHz (1597 MHz Boost Clock + 200 MHz OC)，而 AORUS MASTER 16 BYH 的顯示晶片 AI Boost 頻率为 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)。
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['1797']) -> Score: 0
 --------------------------------------------------
 [COMPARISON] Q: BYH 和 BXH 的 GPU 效能規格有哪些差異？
-A: BYH 和 BXH 的 GPU 效能規格主要有以下幾點差異：
+A: BYH 和 BXH 的 GPU 效能規格主要差異如下：
 
 - BYH 使用 NVIDIA® GeForce RTX™ 5080 Laptop GPU，而 BXH 使用 NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU。
 - BYH 的 GPU 頻率為 1902 MHz，BXH 的 GPU 頻率為 1962 MHz。
-- BYH 的 GPU 最大功耗為 175W，BXH 的 GPU 最大功耗為 140W。
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['16GB', '12GB']) -> Score: 0
+- BYH 的 GPU 最大功耗为 175W，BXH 的 GPU 最大功耗为 140W。
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['16GB', '12GB']) -> Score: 0
 --------------------------------------------------
 [COMPARISON] Q: 請比較 BZH、BYH、BXH 的螢幕規格，包括解析度、更新率和面板類型。
 A: BZH、BYH、BXH 的螢幕規格如下：
@@ -158,40 +149,34 @@ A: BZH、BYH、BXH 的螢幕規格如下：
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 三個 AORUS MASTER 16 型號的記憶體和 SSD 擴充規格是否相同？
-A: 三個 AORUS MASTER 16 型號的記憶體和 SSD 擴充規格相同，具體如下：
+A: 三個 AORUS MASTER 16 型號的記憶體和 SSD 擴充規格相同，都是：
 
-- **記憶體**：Up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion。
-- **SSD**：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots Up to 4TB PCIe NVMe™ M.2 SSD *The storage capacity may differ by country and region. Please contact your local dealers or retailers for the latest product information。
-
-因此，這三個型号的記憶體和SSD擴充規格完全一致。
+- Up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion
+- 1x PCIe Gen5 M.2 slot
+- 1x PCIe Gen4x4 M.2 slots
+- Up to 4TB PCIe NVMe™ M.2 SSD *The storage capacity may differ by country and region.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較 BZH 與 BXH 的顯示卡 VRAM 容量。
-A: AORUS MASTER 16 BZH 的顯示晶片為 NVIDIA® GeForce RTX™ 5090 Laptop GPU，其VRAM容量為24GB GDDR7。
+A: AORUS MASTER 16 BZH 的顯示晶片為 NVIDIA® GeForce RTX™ 5090 Laptop GPU，其 VRAM 容量為 24GB GDDR7。
 
-AORUS MASTER 16 BXH 的顯示晶片為 NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU，其VRAM容量為12GB GDDR7。
+AORUS MASTER 16 BXH 的顯示晶片為 NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU，其 VRAM 容量為 12GB GDDR7。
 
-因此，BZH 的顯示晶片 VRAM 容量比 BXH 的顯示晶片 VRAM 容量多出 12GB。
+因此，BZH 比 BXH 的顯示卡 VRAM 容量多出 12GB。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: BZH 和 BYH 的處理器是否相同？請說明差異。
-A: BZH 和 BYH 的處理器是相同的，都是 Intel® Core™ Ultra 9 Processor 275HX。以下是兩者的詳細參數：
+A: BZH 和 BYH 的處理器相同，都是 Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)。
 
-- **BZH**:
-  - 36MB cache
-  - 最高 5.4 GHz
-  - 24 cores, 24 threads
+差異主要在於作業系統的不同：
+- BZH 的作業系統為：Windows 11 Pro (GIGABYTE recommends Windows 11 Pro for business.) Windows 11 Home UEFI Shell OS。
+- BYH 的作業系統為：Windows 11 Pro (GIGABYTE recommends Windows 11 Pro for business.) Windows 11 Home UEFI Shell OS。
 
-- **BYH**:
-  - 36MB cache
-  - 最高 5.4 GHz
-  - 24 cores, 24 threads
-
-兩者的處理器完全相同，因此性能和功能也完全一致。
+兩者的顯示晶片、連接埠、記憶體、視訊鏡頭、安全裝置等規格相同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請列出三個型號在最大記憶體容量、記憶體頻率及插槽數量上的差異。
-A: 以下是三個型號在最大記憶體容量、記憶體頻率及插槽數量上的差異：
+A: 以下是三個型號在最大記憶體容量、記憶體頻率及插槽數量上的比較：
 
 1. **AORUS MASTER 16 BXH**:
    - 最大記憶體容量：64GB DDR5 5600MHz
@@ -205,117 +190,75 @@ A: 以下是三個型號在最大記憶體容量、記憶體頻率及插槽數�
    - 最大記憶體容量：64GB DDR5 5600MHz
    - 插槽數量：2x SO-DIMM sockets for expansion
 
-**結論**：三個型號在最大記憶體容量、記憶體頻率及插槽數量上完全相同，都是64GB DDR5 5600MHz，且都支持2個SO-DIMM插槽。
+**結論**：三個型號在最大記憶體容量、記憶體頻率及插槽數量上完全相同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 比較 BZH、BYH 和 BXH 的儲存裝置插槽規格與最高 SSD 容量。
-A: 比較 AORUS MASTER 16 BZH、BYH 和 BXH 的儲存裝置插槽規格與最高 SSD 容量如下：
+A: BZH、BYH 和 BXH 的儲存裝置插槽規格相同，都為：
 
-- **BZH**
-  - 儲存裝置插槽：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-  - 最高 SSD 容量：4TB
+- 1x PCIe Gen5 M.2 slot
+- 1x PCIe Gen4x4 M.2 slots
 
-- **BYH**
-  - 儲存裝置插槽：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-  - 最高 SSD 容量：4TB
+最高 SSD 容量相同，都支持：
 
-- **BXH**
-  - 儲存裝置插槽：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-  - 最高 SSD 容量：4TB
+- Up to 4TB PCIe NVMe™ M.2 SSD
 
-所有三款機型的儲存裝置插槽規格相同，均為1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots，且最高 SSD 容量均為4TB。
+因此，BZH、BYH 和 BXH 在儲存裝置插槽規格與最高 SSD 容量方面完全相同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 三個型號的鍵盤規格是否有不同？
-A: 三個型號的AORUS MASTER 16 BZH、BXH、BYH的鍵盤規格完全相同，具備以下特點：
-
-- 3-zone RGB Backlit Keyboard
-- 最大鍵盤行程：1.7mm
-- 支持N-Key功能
-
-因此，三個型號的鍵盤規格沒有不同。
+A: 三個型號的AORUS MASTER 16 BZH、BXH、BYH的鍵盤規格完全相同，都為：3-zone RGB Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較 BZH、BYH、BXH 的連接埠配置。
-A: 以下是BZH、BYH、BXH三款AORUS MASTER 16的連接埠配置比較：
+A: BZH、BYH、BXH 的連接埠配置如下：
 
-- **連接埠配置**：
-  - **BZH**：
-    - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持USB4, DisplayPort™ 2.1和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
-    - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持USB4, DisplayPort™ 1.4和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
-  - **BYH**：
-    - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持USB4, DisplayPort™ 2.1和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
-    - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持USB4, DisplayPort™ 1.4和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
-  - **BXH**：
-    - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持USB4, DisplayPort™ 2.1和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
-    - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持USB4, DisplayPort™ 1.4和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
+- **BZH**:
+  - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+  - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持 USB4, DisplayPort™ 1.4 and Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack support mic / headphone combo
 
-- **主要差異**：
-  - **BYH** 和 **BXH** 的連接埠配置完全相同，僅在製造商名稱上有所不同。
-  - **BZH** 和 **BXH** 的連接埠配置相同，僅在製造商名稱上有所不同。
-  - **BZH** 和 **BYH** 的連接埠配置完全相同，僅在製造商名稱上有所不同。
+- **BYH**:
+  - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+  - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持 USB4, DisplayPort™ 1.4 and Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack support mic / headphone combo
 
-- **共同連接埠**：
-  - 三款產品均具有相同的連接埠配置，包括：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持USB4, DisplayPort™ 2.1和Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack支持麥克風/耳機連線。
+- **BXH**:
+  - 左側：1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (支持 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+  - 右側：1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (支持 USB4, DisplayPort™ 1.4 and Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack support mic / headphone combo
 
-- **Thunderbolt™版本**：
-  - **BZH** 和 **BXH** 都使用 Thunderbolt™5。
-  - **BYH
+所有三款配置的連接埠配置完全相同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: BZH 與 BXH 的 Thunderbolt 5 和 Thunderbolt 4 支援情況是否一樣？
-A: BZH 和 BXH 的 Thunderbolt 5 支援情況一樣，都是支持 USB4、DisplayPort 2.1 和 Power Delivery 3.0。
-
-BZH 和 BXH 的 Thunderbolt 4 支援情況一樣，都是支持 USB4、DisplayPort 1.4 和 Power Delivery 3.0。
-
-不同之處在於，BZH 的 Type-C with Thunderbolt™5 支援 DisplayPort 2.1，而 BXH 的 Type-C with Thunderbolt™4 支援 DisplayPort 1.4。
-Judge: ✅ 驗證通過 -> Score: 1
+A: BZH 和 BXH 的 Thunderbolt 5 支援情況一樣，都是支持 USB4、DisplayPort™ 2.1 和 Power Delivery 3.0。Thunderbolt 4 的支援情況也一樣，都是支持 USB4、DisplayPort™ 1.4 和 Power Delivery 3.0。
+Judge: ✅ 驗證通過 (語意命中: ['不同(sim:0.85)']) -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較三個型號的 Wi-Fi、藍牙及有線網路規格。
-A: 三個型號 AORUS MASTER 16 BXH、BYH 和 BZH 在 Wi-Fi、藍牙及有線網路規格方面完全相同，具體如下：
+A: 三個型號 AORUS MASTER 16 BZH、AORUS MASTER 16 BYH 和 AORUS MASTER 16 BXH 的 Wi-Fi、藍牙及有線網路規格完全相同，具體如下：
 
 - Wi-Fi：WIFI 7 (802.11be 2x2)
 - 蓝牙：Bluetooth v5.4
 - 有線網路：LAN: 1G
 
-因此，三個型號之間沒有任何差異。
+因此，三個型號在這些通訊規格方面沒有任何差異。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 三個型號的電池容量與變壓器功率有何不同？
-A: 三個型號 AORUS MASTER 16 BXH、AORUS MASTER 16 BZH 和 AORUS MASTER 16 BYH 的電池容量都相同，為 99Wh。變壓器功率也相同，為 330W AC Adapter。因此，三個型號在電池容量和變壓器功率方面沒有不同。
+A: 三個型號 AORUS MASTER 16 BXH、AORUS MASTER 16 BZH 和 AORUS MASTER 16 BYH 的電池容量都相同，為 99Wh。變壓器功率也相同，為 330W AC Adapter。因此，三個型號在電池容量與變壓器功率方面沒有不同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較 BZH、BYH 和 BXH 的尺寸與重量。
-A: 根據提供的資訊，BZH、BYH 和 BXH 的尺寸和重量如下：
+A: BZH、BYH 和 BXH 的重量都為 ~2.5 kg，因此在重量上三者相同。
 
-### 尺寸
-- **AORUS MASTER 16 BZH**：357 x 254 x 23~29.9 mm
-- **AORUS MASTER 16 BYH**：357 x 254 x 23~29.9 mm
-- **AORUS MASTER 16 BXH**：357 x 254 x 23~29.9 mm
-
-所有三款機型的尺寸完全相同，都是 357 x 254 x 23~29.9 mm。
-
-### 重量
-- **AORUS MASTER 16 BZH**：~2.5 kg
-- **AORUS MASTER 16 BYH**：~2.5 kg
-- **AORUS MASTER 16 BXH**：~2.5 kg
-
-所有三款機型的重量也完全相同，都是 ~2.5 kg。
-
-因此，BZH、BYH 和 BXH 在尺寸和重量方面完全一致。
+尺寸方面，三者都為 357 x 254 x 23~29.9 mm，因此在尺寸上三者也相同。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 三個型號是否都配備相同的攝影機與 Windows Hello 功能？
-A: 是的，AORUS MASTER 16 BZH、BYH 和 BXH 都配備相同的攝影機和 Windows Hello 功能。具體來說：
-
-- 都配備 FHD (1080p) IR Webcam
-- 都支持 Build-in array Microphone
-- 都支持 Windows Hello Face Authentication
+A: 是的，AORUS MASTER 16 BZH、AORUS MASTER 16 BXH 和 AORUS MASTER 16 BYH 都配備相同的攝影機（FHD (1080p) IR Webcam）和 Windows Hello 功能。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: BZH、BYH、BXH 的顏色是否有差異？
-A: BZH、BYH、BXH 的顏色均為 Dark Tide，沒有差異。
-Judge: ✅ 驗證通過 (語意命中: ['相同(sim:0.87)']) -> Score: 1
+A: BZH、BYH、BXH 的顏色均為 Dark Tide，未發現有顏色上的差異。
+Judge: ✅ 驗證通過 (語意命中: ['相同(sim:0.85)']) -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 請比較三個型號的音效系統規格。
 A: 三個型號 AORUS MASTER 16 BXH、BYH 和 BZH 的音效系統規格完全相同，具備以下特點：
@@ -324,90 +267,78 @@ A: 三個型號 AORUS MASTER 16 BXH、BYH 和 BZH 的音效系統規格完全相
 - Microphone
 - Dolby Atmos® Smart Amp Technology
 
-因此，三個型號在音效系統方面沒有任何差異。
+因此，三個型號的音效系統規格完全一致。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [COMPARISON] Q: 如果只看 Context 中的規格，BZH、BYH、BXH 哪些硬體規格完全相同？哪些不同？
-A: BZH、BYH、BXH 的硬體規格完全相同的部分包括：
+A: BZH、BYH、BXH 的硬體規格完全相同的項目包括：
 
-1. 中央處理器：Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)
-2. 作業系統：Windows 11 Pro (GIGABYTE recommends Windows 11 Pro for business.) Windows 11 Home UEFI Shell OS
-3. 安全裝置：Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)
-4. 觸控螢幕鏡頭：FHD (1080p) IR Webcam Build-in array Microphone Support Windows Hello Face Authentication
-5. 鍵盤種類：3-zone RGB Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)
+- 作業系統：Windows 11 Pro (GIGABYTE recommends Windows 11 Pro for business.) Windows 11 Home UEFI Shell OS。
+- 安全裝置：Firmware-based TPM, supports Intel® Platform Trust Technology (Intel® PTT)。
+- 中央處理器：Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)。
+- 觸控螢幕鏡頭：FHD (1080p) IR Webcam Build-in array Microphone Support Windows Hello Face Authentication。
+- 鍵盤種類：3-zone RGB Backlit Keyboard, Up to 1.7mm Key-travel (Support N-Key)。
 
-BZH、BYH、BXH 的硬體規格不同的部分包括：
+不同項目的硬體規格如下：
 
-1. 连接埠：
-   - BZH: HDMI 2.1, Type-C with Thunderbolt™5 (支持 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
-   - BYH: HDMI 2.1, Type-C with Thunderbolt™5 (支持 USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
-   - BXH: HDMI 2.1, Type-C with Thunderbolt™4 (支持 USB4, DisplayPort™ 1.4 and Power Delivery 3.0)
-2. Type-C連接埠的Thunderbolt版本：
-   - BZH: Thunderbolt™5
-   - BYH: Thunderbolt™5
-   - BXH: Thunderbolt™4
-3. MicroSD插槽：
-   - BZH: MicroSD (UHS-II)
-   - BYH: MicroSD (UHS-II)
-   - BXH: MicroSD (UHS-II)
+- BZH 和 BXH 的連接埠不同，BZH 有 Type-C with Thunderbolt™5，而 BXH 有 Type-C with Thunderbolt™4。
+- BZH 和 BXH 的記憶體容量不同，BZH 支援最高 64GB DDR5 5600MHz * 2x SO-DIMM sockets，而 BXH 沒有記憶體容量的描述。
+- BZH 和 BXH 的顯示晶片不同，BZH 使用 NVIDIA® GeForce RTX™ 5090 Laptop GPU，而 BXH 沒有顯示晶片的描述。
+- BYH 和 BXH 的連接埠不同，BYH 有 Type-C with Thunderbolt™5，而 BXH 有 Type-C with Thunderbolt™4。
+- BYH 和 BXH 的記憶體容量不同，BYH 沒有記憶體容量的描述，而 BXH 支援最高 64GB DDR5 5600MHz * 2x SO-DIMM sockets。
+- BYH 和 BXH 的中央處理器不同，BYH 使用 Intel® Core™ Ultra 9 Processor 275HX，而 BXH 沒有中央處理器的描述。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台筆電的記憶體最高可以到多少？
-A: 這三款筆電的記憶體最高都可以到64GB DDR5 5600MHz * 2x SO-DIMM sockets。具體來說：
-
-- AORUS MASTER 16 BXH
-- AORUS MASTER 16 BYH
-- AORUS MASTER 16 BZH
+A: 這三款筆電的記憶體最高都可以到64GB DDR5 5600MHz * 2x SO-DIMM sockets。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 請問這系列筆電用什麼處理器？
-A: 這系列筆電使用的處理器為：Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)。
+A: 這系列筆電均使用相同的中央處理器：Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台的顯示卡是哪一張？
-A: 這台的顯示卡有三種配置，請根據具體的機型來選擇：
+A: 這台筆電的顯示卡有三種配置，請明確指出是哪一台：
 
-- AORUS MASTER 16 BZH 的顯示晶片為：NVIDIA® GeForce RTX™ 5090 Laptop GPU
-- AORUS MASTER 16 BYH 的顯示晶片為：NVIDIA® GeForce RTX™ 5080 Laptop GPU
-- AORUS MASTER 16 BXH 的顯示晶片為：NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU
+- AORUS MASTER 16 BZH 的顯示晶片為：NVIDIA® GeForce RTX™ 5090 Laptop GPU 24GB GDDR7 175W Maximum Graphics Power with Dynamic Boost* AI Boost : 1797 MHz (1597 MHz Boost Clock + 200 MHz OC)* *May vary by scenario。
+- AORUS MASTER 16 BYH 的顯示晶片為：NVIDIA® GeForce RTX™ 5080 Laptop GPU 16GB GDDR7 175W Maximum Graphics Power with Dynamic Boost* AI Boost : 1902 MHz (1702 MHz Boost Clock + 200 MHz OC)* *May vary by scenario。
+- AORUS MASTER 16 BXH 的顯示晶片為：NVIDIA® GeForce RTX™ 5070 Ti Laptop GPU 12GB GDDR7 140W Maximum Graphics Power with Dynamic Boost* AI Boost : 1962 MHz (1762 MHz Boost Clock + 200 MHz OC)* *May vary by scenario。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 螢幕有多大、解析度和更新率是多少？
-A: AORUS MASTER 16 BZH 和 AORUS MASTER 16 BYH 的顯示器尺寸相同，為 16"，解析度為 16:10 WQXGA (2560×1600)，更新率為 240Hz。
+A: AORUS MASTER 16 BZH、BYH 和 BXH 的顯示器尺寸都是 16"，解析度都是 2560×1600，更新率都是 240Hz。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這款筆電有幾個 M.2 SSD 插槽？
-A: 這款筆電有兩個 M.2 SSD 插槽。具體來說，這三個版本的 AORUS MASTER 16 都有以下相同的儲存裝置：
-
-- AORUS MASTER 16 BZH：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-- AORUS MASTER 16 BYH：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-- AORUS MASTER 16 BXH：1x PCIe Gen5 M.2 slot 1x PCIe Gen4x4 M.2 slots
-
-每個插槽都支持最高4TB的PCIe NVMe™ M.2 SSD。
+A: AORUS MASTER 16 BZH、BYH 和 BXH 都有 1x PCIe Gen5 M.2 slot 和 1x PCIe Gen4x4 M.2 slots，總計有 2 個 M.2 SSD 插槽。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 請問記憶體可以擴充嗎？
-A: AORUS MASTER 16 BZH、AORUS MASTER 16 BXH 和 AORUS MASTER 16 BYH 的記憶體都可以擴充，支援最高 64GB DDR5 5600MHz 的 SO-DIMM 配備。
+A: AORUS MASTER 16 BZH、BXH、BYH 的記憶體都可以擴充，支援 Up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這系列的電池容量是多少？
-A: 這系列的所有模型，包括BZH、BXH和BYH，電池容量都是Li-ion 99Wh。
+A: 這系列的所有 laptop，包括 BZH、BXH、BYH，電池容量都是 Li-ion 99Wh。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台電腦的變壓器需要幾瓦？
-A: 這台電腦（BZH、BYH、BXH）的變壓器都需要330W。
+A: 這三款AORUS MASTER 16 BYH、BXH、BZH的變壓器都需要330W。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 它有支援 Wi-Fi 7 嗎？
-A: AORUS MASTER 16 BYH、AORUS MASTER 16 BXH 和 AORUS MASTER 16 BZH 都支援 Wi-Fi 7 (802.11be 2x2)。
+A: AORUS MASTER 16 BZH、BYH、BXH 都支援 Wi-Fi 7 (802.11be 2x2)。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台有 Thunderbolt 嗎？
-A: 這台指的是哪一台呢？請您明確指出是 AORUS MASTER 16 BYH、AORUS MASTER 16 BXH 或 AORUS MASTER 16 BZH。因為根據您的問題，我需要明確指出具體哪一台機型具備 Thunderbolt 優勢。
+A: 這台 AORUS MASTER 16 系列的 laptop 都有 Thunderbolt 技術，具體如下：
+
+- AORUS MASTER 16 BYH: 支持 Thunderbolt™5
+- AORUS MASTER 16 BXH: 支持 Thunderbolt™4
+- AORUS MASTER 16 BZH: 支持 Thunderbolt™5
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這系列筆電的鍵盤是什麼類型？
-A: 這系列筆電的鍵盤都是3-zone RGB Backlit Keyboard，具備至多1.7mm鍵盤行程，並且支援N-Key。具體來說，BZH、BYH和BXH三款筆電的鍵盤類型完全相同。
+A: 這系列筆電的鍵盤都是3-zone RGB Backlit Keyboard，具備至多1.7mm鍵盤行程，支援N-Key。具體來說，包括AORUS MASTER 16 BZH、AORUS MASTER 16 BYH以及AORUS MASTER 16 BXH三款筆電都採用了相同的鍵盤設計。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 它的重量大約是多少？
@@ -415,46 +346,31 @@ A: AORUS MASTER 16 BZH、AORUS MASTER 16 BXH 和 AORUS MASTER 16 BYH 的重量�
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這款的尺寸是多少？
-A: 這款的尺寸為：357 x 254 x 23~29.9 mm。此尺寸適用於BZH、BYH和BXH三款機型，請參照實際情況。
+A: AORUS MASTER 16 BZH、BYH、BXH 的尺寸均为：357 x 254 x 23~29.9 mm。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這系列有沒有 IR Webcam？
-A: 這系列的所有模型都配備了 IR Webcam。具體來說：
-
-- AORUS MASTER 16 BYH
-- AORUS MASTER 16 BZH
-- AORUS MASTER 16 BXH
+A: AORUS MASTER 16 BYH、BZH 和 BXH 都配備了 IR Webcam。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台筆電的顏色是什麼？
-A: 這台筆電的顏色為Dark Tide，具體模型包括BZH、BYH和BXH。
+A: 這台筆電的顏色為：Dark Tide。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這三個型號的螢幕規格都一樣嗎？
-A: 這三個型號的螢幕規格一樣，具體如下：
-
-- AORUS MASTER 16 BXH
-- AORUS MASTER 16 BZH
-- AORUS MASTER 16 BYH
-
-螢幕規格：
-16" 16:10 OLED WQXGA (2560×1600) 240Hz, 1ms, DCIP-3 100%, 500nits (peak), 1,000,000:1 NVIDIA® G-SYNC® NVIDIA® Advanced Optimus VESA DisplayHDR True Black 500 VESA ClearMR 10000 Pantone® Validated TÜV Rheinland Low Blue Light Dolby Vision®
+A: 這三個型號的螢幕規格一樣，都是16" 16:10 OLED WQXGA (2560×1600) 240Hz，1ms，DCIP-3 100%，500nits (peak)，1,000,000:1 NVIDIA® G-SYNC® NVIDIA® Advanced Optimus VESA DisplayHDR True Black 500 VESA ClearMR 10000 Pantone® Validated TÜV Rheinland Low Blue Light Dolby Vision®。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這系列最高可以搭載多大容量的 SSD？
-A: 這系列最高可以搭載的 SSD 容量為 4TB。所有三款 AORUS MASTER 16 BZH、BYH 和 BXH 都使用相同的 SSD 設計，即 1x PCIe Gen5 M.2 slot 和 1x PCIe Gen4x4 M.2 slots，最高支援 4TB 的 PCIe NVMe™ M.2 SSD。
+A: 這系列最高可以搭載多大容量的 SSD 還是相同的，都是「Up to 4TB PCIe NVMe™ M.2 SSD」。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台支援 Windows Hello 臉部登入嗎？
-A: 這三款 AORUS MASTER 16 系列的 laptop 都支援 Windows Hello 臉部登入功能。具體來說：
-
-- AORUS MASTER 16 BXH
-- AORUS MASTER 16 BYH
-- AORUS MASTER 16 BZH
+A: AORUS MASTER 16 BZH、AORUS MASTER 16 BXH 和 AORUS MASTER 16 BYH 全都支援 Windows Hello 面部登入功能。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 請問這系列的網路連線功能有哪些？
-A: 這系列的AORUS MASTER 16的網路連線功能相同，都支援以下配置：
+A: 這系列的網路連線功能包括：
 
 - WIFI 7 (802.11be 2x2)
 - LAN: 1G
@@ -462,15 +378,15 @@ A: 這系列的AORUS MASTER 16的網路連線功能相同，都支援以下配�
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [AMBIGUOUS] Q: 這台筆電有幾個 USB Type-C？
-A: 這台筆電有兩個 USB Type-C 型接埠。
+A: 這台筆電有兩個 USB Type-C。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BZH 購買時有沒有附贈滑鼠？
-A: 規格表中未提供此資訊。
+A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BYH 可以選購白色或銀色版本嗎？
-A: 規格表中未提供此資訊。BYH 標準提供 Dark Tide 風色版本，未提及白色或銀色版本的選購。
+A: 規格表中未提供此資訊。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BXH 的電池續航力可以使用幾個小時？
@@ -478,7 +394,7 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: 這三個型號的保固期限各是幾年？
-A: 規格表中未提供此資訊
+A: 我是專業的技嘉筆電客服 AI，只能回答與筆電規格相關的問題。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BZH 的 CPU 在 Cinebench R23 多核心跑分是多少？
@@ -486,7 +402,7 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BYH 玩 Cyberpunk 2077 在 2K 解析度下可以跑多少 FPS？
-A: 規格表中未提供此資訊。BYH 模型的遊戲性能會受到多方面因素影響，包括遊戲設定、硬件配置等，因此無法直接從提供的資訊中得出在 2K 解析度下玩 Cyberpunk 2077 的 FPS 數值。
+A: 我是專業的技嘉筆電客服 AI，只能回答與筆電規格相關的問題。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BXH 的風扇噪音最高有幾分貝？
@@ -494,15 +410,15 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BZH 是否支援觸控螢幕？
-A: 規格表中未提供此資訊。
+A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BYH 的螢幕最大亮度在一般使用模式下是多少 nits？
-A: AORUS MASTER 16 BYH 的顯示器最大亮度在一般使用模式下為 500 nits。
-Judge: ❌ 驗證失敗 (遺漏關鍵字: ['未拒答 (未命中: 規格表中未提供此資訊)']) -> Score: 0
+A: BYH 的螢幕最大亮度在一般使用模式下是 500 nits。
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['未拒答 (未命中拒答關鍵字)']) -> Score: 0
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BXH 是否內建指紋辨識器？
-A: 規格表中未提供此資訊。
+A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BZH 的 RAM 是由哪一家廠商生產的？
@@ -510,7 +426,7 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BYH 可以自行更換 CPU 嗎？
-A: 規格表中未提供此資訊。
+A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BXH 是否支援 RAID 0？
@@ -522,8 +438,8 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BYH 的鍵盤 RGB 可以自訂每一顆按鍵的顏色嗎？
-A: AORUS MASTER 16 BYH 的鍵盤支持3-zone RGB Backlit Keyboard功能，但是否可以自訂每一顆按鍵的顏色，規格表中未提供此資訊。建议直接联系GIGABYTE或AORUS的客服或當地的 dealers / retailers，以獲得最準確的信息。
-Judge: ✅ 驗證通過 -> Score: 1
+A: BYH 的鍵盤 RGB 為 3-zone Backlit Keyboard，支援自訂鍵盤顏色的功能。不過，具體的自訂細節（如每一顆按鍵的顏色）可能需要查看更詳細的用戶指南或設定界面，因為這可能會因操作系統的不同而有所差異。
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['未拒答 (未命中拒答關鍵字)']) -> Score: 0
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: BXH 是否附贈 Windows Office 授權？
 A: 規格表中未提供此資訊
@@ -542,7 +458,7 @@ A: 規格表中未提供此資訊
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [HALLUCINATION_TEST] Q: 這系列筆電的售後維修據點有哪些？
-A: 規格表中未提供此資訊
+A: 我是專業的技嘉筆電客服 AI，只能回答與筆電規格相關的問題。
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What is the GPU of BZH?
@@ -550,11 +466,11 @@ A: The GPU of AORUS MASTER 16 BZH is NVIDIA® GeForce RTX™ 5090 Laptop GPU.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: How much RAM does BYH support at maximum?
-A: The AORUS MASTER 16 BYH supports up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion.
+A: AORUS MASTER 16 BYH supports up to 64GB DDR5 5600MHz * 2x SO-DIMM sockets for expansion.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What is the screen resolution and refresh rate of BXH?
-A: The AORUS MASTER 16 BXH has a 16" 16:10 OLED display with a resolution of 2560×1600 and a refresh rate of 240Hz.
+A: The screen resolution and refresh rate of AORUS MASTER 16 BXH is 16:10 OLED WQXGA (2560×1600) with a 240Hz refresh rate.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: Does BZH support Wi-Fi 7?
@@ -562,7 +478,7 @@ A: Yes, AORUS MASTER 16 BZH supports Wi-Fi 7 (802.11be 2x2).
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: How many M.2 SSD slots are available on BYH?
-A: On AORUS MASTER 16 BYH, there is 1x PCIe Gen5 M.2 slot and 1x PCIe Gen4x4 M.2 slots, totaling 2 M.2 SSD slots available.
+A: AORUS MASTER 16 BYH has 1x PCIe Gen5 M.2 slot and 1x PCIe Gen4x4 M.2 slots, totaling 2 M.2 SSD slots.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What processor is used in AORUS MASTER 16 BXH?
@@ -574,7 +490,7 @@ A: The maximum graphics power of the BZH GPU is 175W.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: How much VRAM does the BYH graphics card have?
-A: The NVIDIA® GeForce RTX™ 5080 Laptop GPU in the AORUS MASTER 16 BYH has 16GB VRAM.
+A: The NVIDIA® GeForce RTX™ 5080 Laptop GPU in the AORUS MASTER 16 BYH has 16GB GDDR7 VRAM.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: Does BXH have Thunderbolt 5 and Thunderbolt 4 ports?
@@ -582,12 +498,10 @@ A: Yes, the AORUS MASTER 16 BXH model has both Thunderbolt 5 and Thunderbolt 4 p
 
 - Left Side: 1 x Type-C with Thunderbolt™5 (support USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
 - Right Side: 1 x Type-C with Thunderbolt™4 (support USB4, DisplayPort™ 1.4 and Power Delivery 3.0)
-
-Both ports support USB4, DisplayPort 2.1/1.4, and Power Delivery 3.0.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What type of keyboard does BZH use?
-A: The keyboard used in AORUS MASTER 16 BZH is a 3-zone RGB Backlit Keyboard, with a key-travel up to 1.7mm and support for N-Key.
+A: The BZH model uses a 3-zone RGB Backlit Keyboard with up to 1.7mm key-travel and supports N-Key.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What is the battery capacity of BYH?
@@ -599,7 +513,7 @@ A: The AC adapter wattage for AORUS MASTER 16 BXH is 330W.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What are the dimensions and weight of BZH?
-A: The dimensions of AORUS MASTER 16 BZH are 357 x 254 x 23~29.9 mm, and the weight is ~2.5 kg.
+A: The dimensions of AORUS MASTER 16 BZH are 357 x 254 x 23~29.9 mm, and the weight is ~2.5 kg. Please refer to the actual situation as dimensions and weight may vary according to the configuration, manufacturing process, and measurement method.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What color is the AORUS MASTER 16 BYH?
@@ -607,34 +521,28 @@ A: The AORUS MASTER 16 BYH is available in the color Dark Tide.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: Does BZH support Windows Hello facial authentication?
-A: Yes, the AORUS MASTER 16 BZH supports Windows Hello facial authentication.
+A: Yes, AORUS MASTER 16 BZH supports Windows Hello facial authentication.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What connectivity options are available on BYH?
-A: On the AORUS MASTER 16 BYH model, the connectivity options available are:
+A: On the AORUS MASTER 16 BYH, the connectivity options available are:
 
 - WIFI 7 (802.11be 2x2)
 - LAN: 1G
 - Bluetooth v5.4
-- Left Side: 1 x DC in, 1 x RJ-45, 1 x HDMI 2.1, 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™5 (support USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
-- Right Side: 1 x Type-A support USB3.2 Gen2, 1 x Type-C with Thunderbolt™4 (support USB4, DisplayPort™ 1.4 and Power Delivery 3.0), 1 x MicroSD (UHS-II), 1 x Audio Jack support mic / headphone combo
-Judge: ✅ 驗證通過 -> Score: 1
+- HDMI 2.1
+- Type-A support USB3.2 Gen2
+- Type-C with Thunderbolt™5 (support USB4, DisplayPort™ 2.1 and Power Delivery 3.0)
+- MicroSD (UHS-II)
+- Audio Jack (support mic / headphone combo)
+Judge: ❌ 驗證失敗 (遺漏關鍵字或規則: ['Thunderbolt 4']) -> Score: 0
 --------------------------------------------------
 [MULTILINGUAL] Q: Are the display specifications identical across BZH, BYH, and BXH?
-A: The display specifications are identical across BZH, BYH, and BXH. Here are the specific specs for each:
-
-- **AORUS MASTER 16 BZH**: 
-  - 16" 16:10 OLED WQXGA (2560×1600) 240Hz, 1ms, DCIP-3 100%, 500nits (peak), 1,000,000:1 NVIDIA® G-SYNC® NVIDIA® Advanced Optimus VESA DisplayHDR True Black 500 VESA ClearMR 10000 Pantone® Validated TÜV Rheinland Low Blue Light Dolby Vision®
-
-- **AORUS MASTER 16 BYH**: 
-  - 16" 16:10 OLED WQXGA (2560×1600) 240Hz, 1ms, DCIP-3 100%, 500nits (peak), 1,000,000:1 NVIDIA® G-SYNC® NVIDIA® Advanced Optimus VESA DisplayHDR True Black 500 VESA ClearMR 10000 Pantone® Validated TÜV Rheinland Low Blue Light Dolby Vision®
-
-- **AORUS MASTER 16 BXH**: 
-  - 16" 16:10 OLED WQXGA (2560×1600) 240Hz, 1ms, DCIP-3 100%, 500nits (peak), 1,000,000:1 NVIDIA® G-SYNC® NVIDIA® Advanced Optimus VESA DisplayHDR True Black 500 VESA ClearMR 10000 Pantone® Validated TÜV Rheinland Low Blue Light Dolby Vision®
+A: The display specifications are identical for AORUS MASTER 16 BZH, AORUS MASTER 16 BYH, and AORUS MASTER 16 BXH. They all feature a 16" 16:10 OLED WQXGA (2560×1600) display with a 240Hz refresh rate, 1ms response time, DCIP-3 100%, 500nits peak brightness, and a contrast ratio of 1,000,000:1. Additionally, they support NVIDIA® G-SYNC®, NVIDIA® Advanced Optimus, VESA DisplayHDR True Black 500, VESA ClearMR 10000, Pantone® Validated, and TÜV Rheinland Low Blue Light.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: Compare the GPUs of BZH, BYH, and BXH.
-A: Certainly, here is the comparison of the GPUs for the AORUS MASTER 16 BZH, BYH, and BXH models:
+A: Certainly, here is the comparison of the GPUs for AORUS MASTER 16 BZH, BYH, and BXH:
 
 - **AORUS MASTER 16 BZH**:
   - **GPU**: NVIDIA® GeForce RTX™ 5090 Laptop GPU
@@ -654,7 +562,7 @@ A: Certainly, here is the comparison of the GPUs for the AORUS MASTER 16 BZH, BY
   - **Power**: 140W Maximum Graphics Power with Dynamic Boost
   - **Boost Clock**: 1962 MHz (1762 MHz Boost Clock + 200 MHz OC)
 
-As you can see, the GPUs get progressively more powerful from BZH to BYH to BXH, with the BXH model having the least powerful GPU.
+As you can see, the GPUs get progressively more powerful, with the BZH model having the highest specifications.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: Does the specification sheet mention the warranty period for BXH?
@@ -662,6 +570,6 @@ A: This information is not provided.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
 [MULTILINGUAL] Q: What is the maximum SSD storage capacity supported by the AORUS MASTER 16 series?
-A: The maximum SSD storage capacity supported by the AORUS MASTER 16 series is up to 4TB PCIe NVMe™ M.2 SSD. This capacity may differ by country and region, so it's best to contact local dealers or retailers for the latest product information.
+A: The maximum SSD storage capacity supported by the AORUS MASTER 16 series is up to 4TB PCIe NVMe™ M.2 SSD. This capacity may differ by country and region, so please contact your local dealers or retailers for the latest product information.
 Judge: ✅ 驗證通過 -> Score: 1
 --------------------------------------------------
